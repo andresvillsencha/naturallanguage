@@ -16,3 +16,27 @@ To "compile" your Ext JS App for the first time
 To create your web server (inside the server folder):
 - npm init -y
 - npm install express cors dotenv body-parser openai
+
+
+When you have everything up and ready, be sure to run sencha app watch, and test on your web browser of choice:
+- sencha app watch
+
+your file structure should look something like this:
+app/
+build/
+ext/ **
+resources/
+server/
+app.js
+app.json
+bootstrap.css **
+bootstrap.js **
+bootstrap.json **
+bootstrap.jsonp **
+build.xml
+index.html
+workspace.json
+
+** Files missing will be added once you create your own application with sencha command
+
+The server .env file requires your OpenAI key.
